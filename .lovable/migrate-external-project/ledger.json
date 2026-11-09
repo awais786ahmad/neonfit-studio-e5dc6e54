@@ -1,0 +1,17 @@
+{
+  "source": [
+    "https://github.com/awais786ahmad/neonfit-studio-ad61d961"
+  ],
+  "target": "Frontend-only NeonFitter storefront, editor, and admin experience using browser local storage as explicitly requested",
+  "capabilities": [
+    { "capability": "application code", "source": "public GitHub repository", "outcome": "repository inspected; it contains the Lovable starter placeholder, not the NeonFitter implementation described in the supplied requirements", "status": "in_progress", "next_action": "build the requested customer and admin experience in the existing TanStack project" },
+    { "capability": "database schema and records", "source": "repository and supplied requirements", "outcome": "no application schema or record export was present; use browser local storage per explicit frontend-only request", "status": "accepted_local_only", "next_action": "keep demo data and customer changes in the current browser only" },
+    { "capability": "authentication and user identities", "source": "repository and supplied requirements", "outcome": "no existing auth implementation; guest customer flows only", "status": "accepted_not_in_scope", "next_action": "none for this frontend-only build" },
+    { "capability": "authorization", "source": "repository and supplied requirements", "outcome": "no server-backed admin roles requested; admin screens are a local demo", "status": "accepted_frontend_only", "next_action": "make the admin demo clearly separate from customer views" },
+    { "capability": "uploaded file bytes", "source": "repository assets and supplied requirements", "outcome": "repository includes four local lifestyle images; customer image uploads remain browser-local", "status": "in_progress", "next_action": "use relevant bundled imagery and browser file previews where practical" },
+    { "capability": "external providers and secrets", "source": "repository manifests and runtime call sites", "outcome": "no external service credentials or integrations detected", "status": "not_applicable", "next_action": "none" },
+    { "capability": "public endpoints and callbacks", "source": "repository routes", "outcome": "none detected", "status": "not_applicable", "next_action": "none" },
+    { "capability": "webhooks and schedules", "source": "repository runtime modules", "outcome": "none detected; server-side behavior is outside requested scope", "status": "accepted_not_in_scope", "next_action": "none" },
+    { "capability": "cutover and verification", "source": "existing Lovable preview", "outcome": "verify the customer storefront, SVG editor, cart, local data and admin demo", "status": "pending", "next_action": "complete the UI and verify key browser interactions" }
+  ]
+}
